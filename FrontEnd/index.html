@@ -2,23 +2,30 @@
 <html>
 <head>
     <title>Hello jQuery</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="jquery-1.11.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://jpillora.com/jquery.rest/dist/1/jquery.rest.min.js"></script>
     <script src="hello.js"></script>
 </head>
 
 <body>
 <div>
-    <script>
+    <!--<script>-->
 
-        $(document).ready(function(){
-            //var unirest = require('unirest');
-            //console.log(unirest);
-            //var Request = unirest.get('http://localhost:4567/hello');
-            document.getElementById("demo").innerHTML = Request.body;
-        });
+        <!--//        $(document).ready(function(){-->
+        <!--//            var unirest = require('unirest');-->
+        <!--//            //console.log(unirest);-->
+        <!--//            var Request = unirest.get('http://localhost:4567/hello');-->
+        <!--//            document.getElementById("demo").innerHTML = Request.body;-->
+        <!--//        });-->
+        <!--var client = new $.RestClient('http://localhost:4567/hello');-->
 
-    </script>
+
+        <!--client.foo.read().done(function (data) {-->
+            <!--alert('I have data: ' + data);-->
+        <!--});-->
+
+    <!--</script>-->
     <p id="demo"></p>
 </div>
 </body>
