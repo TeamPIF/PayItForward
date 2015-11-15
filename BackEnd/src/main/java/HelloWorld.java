@@ -21,7 +21,15 @@ public class HelloWorld {
     }
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         enableCORS("*", "*", "*");
         get("/hello", (req, res) -> "Hello World Confirm");
+=======
+        get("/hello", (req, res) -> "{\"message\":\"Hello there, wayfaring stranger. " +
+                "If you’re reading this then you probably didn’t see our blog post a " +
+                "couple of years back announcing that this API would go away: " +
+                "http://git.io/17AROg Fear not, you should be able to get what you need from " +
+                "the shiny new Events API instead.\",\"documentation_url\":\"https://developer.github.com/v3/activity/events/#list-public-events\"}");
+>>>>>>> 15bcdf07b90a16ea1f7151886a96cbbaa4817d59
     }
 }
