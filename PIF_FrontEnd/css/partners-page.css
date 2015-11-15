@@ -30,6 +30,7 @@
     background-size: cover;
 }
 
+<<<<<<< HEAD
 .donate-header {
     padding-top: 170px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
@@ -41,6 +42,21 @@
 }
 
 .donate-header h3 {
+=======
+#donate-header {
+    padding-top: 170px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    color: #f8f8f8;
+    margin-left: 140px;
+}
+
+#donate-header h1 {
+    font-size: 80px;
+    color: #89b0e7;
+}
+
+#donate-header h3 {
+>>>>>>> Margaret
     text-space: 5px;
     font-size: 30px;
     text-transform: uppercase;
@@ -54,4 +70,8 @@
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> Margaret
 /*<h2 id = "number_avail">10</h2> <h3 id = "item_avail">bagels available</h3>.*/
