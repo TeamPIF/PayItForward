@@ -1,6 +1,8 @@
 /**
  * Created by EvanKing on 11/14/15.
  */
+import com.google.gson.Gson;
+import sectors.Donation;
 import spark.Filter;
 import spark.Request;
 import spark.Response;
@@ -21,7 +23,15 @@ public class HelloWorld {
     }
 
     public static void main(String[] args) {
-        enableCORS("*", "*", "*");
-        get("/hello", (req, res) -> "Hello World Confirm");
+//        enableCORS("*", "*", "*");
+//        get("/hello", (req, res) -> "Hello World Confirm");
+
+        Donation d = new Donation(12, new java.sql.Timestamp(new java.util.Date().getTime()), "test");
+
+        Gson gson = new Gson();
+
+        String json = gson.toJson(d);
+
+        System.out.println(json);
     }
 }

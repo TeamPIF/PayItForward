@@ -1,0 +1,88 @@
+%!Adobe-FontList 1.14
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:231312
+FileModTime:1417438593
+DesignSize:110
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Montserrat-Light
+FamilyName:Montserrat
+StyleName:Light
+MenuName:Montserrat Light
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Montserrat Light
+WritingScript:Roman
+OutlineFileName:\Montserrat-Light.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:44792
+FileModTime:1437147102
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Montserrat-Regular
+FamilyName:Montserrat
+StyleName:Regular
+MenuName:Montserrat
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Montserrat
+WritingScript:Roman
+OutlineFileName:\Montserrat-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:45360
+FileModTime:1437147102
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Montserrat-SemiBold
+FamilyName:Montserrat
+StyleName:Semi Bold
+MenuName:Montserrat Semi Bold
+StyleBits:0
+WeightClass:600
+WidthClass:5
+AngleClass:0
+FullName:Montserrat Semi Bold
+WritingScript:Roman
+OutlineFileName:\Montserrat-SemiBold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:71052
+FileModTime:1433845138
+%EndFont
+
