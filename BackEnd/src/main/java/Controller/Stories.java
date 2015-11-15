@@ -2,7 +2,6 @@ package Controller;
 
 import Data.Homepage.Stories.ThankYou;
 import JDBC.Update;
-import com.google.gson.Gson;
 
 import static spark.Spark.post;
 

@@ -65,6 +65,7 @@ public class Receive extends Query {
         return password;
     }
 
+    //TODO
     private static Business countTimes(String business_id) {
         ArrayList<CountTime> list = null;
         Business business = null;
@@ -90,15 +91,21 @@ public class Receive extends Query {
         return business;
     }
 
-    private static ArrayList<Integer> businesses() {
+    //TODO
+    public static ArrayList<Integer> businesses() {
         ArrayList<Integer> businesses = null;
         try {
             Class.forName(DRIVER_NAME);
             Connection conn = DriverManager.getConnection(JBCCURL);
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(BUSINESSES);
+            ResultSetMetaData rsmd = rs.getMetaData();
+            int columnsNumber = rsmd.getColumnCount();
+
             while (rs.next()) {
-                businesses.add(rs.getInt("id"));
+                for(int i=1; i<=columnsNumber; i++) {
+                    businesses.add(rs.getInt(i));
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();

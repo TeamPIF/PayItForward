@@ -2,6 +2,7 @@ package Controller;
 
 import Data.Homepage.Donate.Donation;
 import Data.Homepage.Tablet.Claim;
+import JDBC.Receive;
 import JDBC.Update;
 
 import static spark.Spark.*;
@@ -11,10 +12,11 @@ import static spark.Spark.*;
  */
 public class Tablet extends Controller{
     public void postDonation(){
-        post("/tablet/claim", (request, response) -> {
+        post("/tablet/donation", (request, response) -> {
             String req = request.body();
             Donation donation = gson.fromJson(req, Donation.class);
-            Update.donation(donation.getBusiness_id(), donation.getDonor_id());
+            int bid = Receive.bid(donation.getEmail());
+            Update.donation(Integer.toString(bid), null);
             response.status(200);
             return response.body();
         });
@@ -24,7 +26,8 @@ public class Tablet extends Controller{
         post("/tablet/claim", (request, response) -> {
             String req = request.body();
             Claim claim = gson.fromJson(req, Claim.class);
-            Update.claim(claim.getBusiness_id());
+            int bid = Receive.bid(claim.getEmail());
+            Update.claim(Integer.toString(bid));
             response.status(200);
             return response.body();
         });

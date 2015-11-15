@@ -1,6 +1,7 @@
 package Controller;
 
 import Data.Homepage.Donate.Donation;
+import JDBC.Receive;
 import JDBC.Update;
 import com.google.gson.Gson;
 
@@ -15,7 +16,8 @@ public class Donate {
             Gson gson = new Gson();
             String req = request.body();
             Donation donation = gson.fromJson(req, Donation.class);
-            Update.donation(donation.getBusiness_id(), donation.getDonor_id());
+            int bid = Receive.bid(donation.getEmail());
+            Update.donation(Integer.toString(bid), donation.getDonor_id());
             response.body(req);
             response.status(200);
             return response.body();

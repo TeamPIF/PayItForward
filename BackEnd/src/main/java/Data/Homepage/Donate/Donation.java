@@ -4,11 +4,11 @@ package Data.Homepage.Donate;
  * Created by EvanKing on 11/15/15.
  */
 public class Donation {
-    String business_id;
+    String email;
     String donor_id;
 
-    public String getBusiness_id() {
-        return business_id;
+    public String getEmail() {
+        return email;
     }
 
     public String getDonor_id() {
@@ -17,8 +17,8 @@ public class Donation {
 
     @Override
     public String toString() {
-        return "Donate{" +
-                "business_id='" + business_id + '\'' +
+        return "Donation{" +
+                "email='" + email + '\'' +
                 ", donor_id='" + donor_id + '\'' +
                 '}';
     }
