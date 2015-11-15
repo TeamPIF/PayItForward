@@ -1,10 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href="http://allfont.net/allfont.css?fonts=montserrat-light" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PIF | Stories</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/partners-page.css" rel="stylesheet">
+    <link href="css/stories-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 <body>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <div class="container topnav">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand topnav" href="index.html">
+                <img src = "img/logo.jpg" width = 230px, height="90px">
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="partners.html">partners</a>
+                </li>
+                <li>
+                    <a href="stories.html">stories</a>
+                </li>
+                <li class = "donate">
+                    <a href="donate.html">donate</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<div id="stories_top">
 
+    <!-- Each image is 800px by 800px -->
+    <div class="photobanner">
+
+        <img class="first" src="img/stories-1.jpg" alt="" height="800 "width="800">
+        <img src="img/stories-2.jpg" alt="" height="800" width="800">
+        <img src="img/stories-3.jpg" alt="" height="800" width="800">
+        <img src="img/stories-4.jpg" alt="" height="800" width="800">
+        <img src="img/stories-5.jpg" alt="" height="800" width="800">
+        <img src="img/stories-1.jpg" alt="" height="800" width="800">
+        <img src="img/stories-2.jpg" alt="" height="800" width="800">
+        <img src="img/stories-3.jpg" alt="" height="800" width="800">
+        <img src="img/stories-4.jpg" alt="" height="800" width="800">
+    </div>
+
+    <form action="" method="post" class="white-pink" action="http://localhost:4567/stories/submit">
+        <h1> ADD YOUR OWN STORY
+        </h1>
+        <svg height="50" width="500">
+            <line x1="0" y1="0" x2="260" y2="0" style="stroke:blue;stroke-width:2" />
+        </svg>
+        <label>
+            <span style="color:black" >NAME </span>
+            <input id="name" type="text" name="name" />
+        </label>
+
+        <label>
+            <span style="color:black">STORY </span>
+            <textarea id="message" name="message" ></textarea>
+        </label>
+        <label>
+            <span>&nbsp;</span>
+            <input type="button" class="button" value="SUBMIT" />
+        </label>
+    </form>
+</div>
 </body>
 </html>
