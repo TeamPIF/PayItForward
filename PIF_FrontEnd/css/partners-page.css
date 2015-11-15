@@ -30,22 +30,25 @@
     background-size: cover;
 }
 
-.donate-header {
+#donate-header {
     padding-top: 170px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     color: #f8f8f8;
+    margin-left: 140px;
 }
 
-.donate-header h1 {
+#donate-header h1 {
     font-size: 80px;
+    color: #89b0e7;
 }
 
-.donate-header h3 {
+#donate-header h3 {
     text-space: 5px;
     font-size: 30px;
     text-transform: uppercase;
     text-decoration: underline;
 }
+
 
 
 
