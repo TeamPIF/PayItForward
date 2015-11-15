@@ -14,7 +14,7 @@ public class Tablet extends Controller{
     public void postDonation(){
         post("/tablet/donation", (request, response) -> {
             String req = request.body();
-            Donation donation = gson.fromJson(req, Donation.class);
+            Donation donation = gson.fromJson(req, Donation.class); 
             int bid = Receive.bid(donation.getEmail());
             Update.donation(Integer.toString(bid), null);
             response.status(200);
