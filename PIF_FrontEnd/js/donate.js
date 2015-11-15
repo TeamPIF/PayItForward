@@ -12,10 +12,10 @@ $.when(
     $("#sinceLaunch").html(Number(JSON.parse(partners[0]).sum));
 });
 
-$.ajax({
-    type: "POST",
-    url: "http://127.0.0.1:4567/stories/submit",
-    data: {"name": "Horris Grant",
-            "message" : "You guys saved me, I used to make millions in the NBA now I'm broke"
-          }
-}).done(function(data) {console.log(data);});
+$.post("http://localhost:4567/stories/submit",
+    JSON.stringify(
+    {
+        name: "Ishaan",
+        message: "I love this thing!!"
+    })
+);
