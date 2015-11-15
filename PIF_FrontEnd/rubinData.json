@@ -2,19 +2,19 @@
   {
     "donations": [
       {
-        "count": 40,
+        "count": 10,
         "time": "Jan 2011"
       },
       {
-        "count": 70,
+        "count": 15,
         "time": "Feb 2011"
       },
       {
-        "count": 16,
+        "count": 20,
         "time": "Mar 2011"
       },
       {
-        "count": 60,
+        "count": 27,
         "time": "Apr 2011"
       },
       {
@@ -22,117 +22,11 @@
         "time": "May 2011"
       },
       {
-        "count": 26,
+        "count": 47,
         "time": "Jun 2011"
-      },
-      {
-        "count": 64,
-        "time": "Jul 2011"
-      },
-      {
-        "count": 76,
-        "time": "Aug 2011"
-      },
-      {
-        "count": 22,
-        "time": "Sep 2011"
-      },
-      {
-        "count": 92,
-        "time": "Oct 2011"
-      },
-      {
-        "count": 10,
-        "time": "Nov 2011"
-      },
-      {
-        "count": 48,
-        "time": "Dec 2011"
-      }
-    ],
-    "business": "Collegetown Bagels"
-  },
-  {
-    "donations": [
-      {
-        "count": 40,
-        "time": "Jan 2011"
-      },
-      {
-        "count": 46,
-        "time": "Feb 2011"
-      },
-      {
-        "count": 26,
-        "time": "Mar 2011"
-      },
-      {
-        "count": 88,
-        "time": "Apr 2011"
-      },
-      {
-        "count": 40,
-        "time": "May 2011"
-      },
-      {
-        "count": 26,
-        "time": "Jun 2011"
-      },
-      {
-        "count": 76,
-        "time": "Jul 2011"
-      },
-      {
-        "count": 94,
-        "time": "Aug 2011"
-      },
-      {
-        "count": 84,
-        "time": "Sep 2011"
-      },
-      {
-        "count": 90,
-        "time": "Oct 2011"
-      },
-      {
-        "count": 64,
-        "time": "Nov 2011"
       },
       {
         "count": 60,
-        "time": "Dec 2011"
-      }
-    ],
-    "business": "D.P. Dough"
-  },
-  {
-    "donations": [
-      {
-        "count": 50,
-        "time": "Jan 2011"
-      },
-      {
-        "count": 44,
-        "time": "Feb 2011"
-      },
-      {
-        "count": 54,
-        "time": "Mar 2011"
-      },
-      {
-        "count": 70,
-        "time": "Apr 2011"
-      },
-      {
-        "count": 92,
-        "time": "May 2011"
-      },
-      {
-        "count": 66,
-        "time": "Jun 2011"
-      },
-      {
-        "count": 18,
         "time": "Jul 2011"
       },
       {
@@ -140,19 +34,19 @@
         "time": "Aug 2011"
       },
       {
-        "count": 70,
+        "count": 100,
         "time": "Sep 2011"
       },
       {
-        "count": 72,
+        "count": 172,
         "time": "Oct 2011"
       },
       {
-        "count": 56,
+        "count": 190,
         "time": "Nov 2011"
       },
       {
-        "count": 32,
+        "count": 200,
         "time": "Dec 2011"
       }
     ],
@@ -161,15 +55,15 @@
   {
     "donations": [
       {
-        "count": 42,
+        "count": 10,
         "time": "Jan 2011"
       },
       {
-        "count": 88,
+        "count": 20,
         "time": "Feb 2011"
       },
       {
-        "count": 58,
+        "count": 20,
         "time": "Mar 2011"
       },
       {
@@ -177,23 +71,23 @@
         "time": "Apr 2011"
       },
       {
-        "count": 90,
+        "count": 40,
         "time": "May 2011"
       },
       {
-        "count": 18,
+        "count": 48,
         "time": "Jun 2011"
       },
       {
-        "count": 50,
+        "count": 70,
         "time": "Jul 2011"
       },
       {
-        "count": 54,
+        "count": 84,
         "time": "Aug 2011"
       },
       {
-        "count": 32,
+        "count": 92,
         "time": "Sep 2011"
       },
       {
@@ -201,11 +95,11 @@
         "time": "Oct 2011"
       },
       {
-        "count": 22,
+        "count": 122,
         "time": "Nov 2011"
       },
       {
-        "count": 82,
+        "count": 132,
         "time": "Dec 2011"
       }
     ],
@@ -218,47 +112,47 @@
         "time": "Jan 2011"
       },
       {
-        "count": 78,
+        "count": 92,
         "time": "Feb 2011"
       },
       {
-        "count": 70,
+        "count": 102,
         "time": "Mar 2011"
       },
       {
-        "count": 70,
+        "count": 112,
         "time": "Apr 2011"
       },
       {
-        "count": 86,
+        "count": 186,
         "time": "May 2011"
       },
       {
-        "count": 96,
+        "count": 196,
         "time": "Jun 2011"
       },
       {
-        "count": 20,
+        "count": 220,
         "time": "Jul 2011"
       },
       {
-        "count": 30,
+        "count": 230,
         "time": "Aug 2011"
       },
       {
-        "count": 14,
+        "count": 244,
         "time": "Sep 2011"
       },
       {
-        "count": 62,
+        "count": 262,
         "time": "Oct 2011"
       },
       {
-        "count": 60,
+        "count": 270,
         "time": "Nov 2011"
       },
       {
-        "count": 82,
+        "count": 282,
         "time": "Dec 2011"
       }
     ],
@@ -267,11 +161,11 @@
   {
     "donations": [
       {
-        "count": 96,
+        "count": 6,
         "time": "Jan 2011"
       },
       {
-        "count": 50,
+        "count": 10,
         "time": "Feb 2011"
       },
       {
@@ -279,11 +173,11 @@
         "time": "Mar 2011"
       },
       {
-        "count": 74,
+        "count": 44,
         "time": "Apr 2011"
       },
       {
-        "count": 96,
+        "count": 56,
         "time": "May 2011"
       },
       {
@@ -291,27 +185,27 @@
         "time": "Jun 2011"
       },
       {
-        "count": 36,
+        "count": 136,
         "time": "Jul 2011"
       },
       {
-        "count": 34,
+        "count": 234,
         "time": "Aug 2011"
       },
       {
-        "count": 86,
+        "count": 286,
         "time": "Sep 2011"
       },
       {
-        "count": 60,
+        "count": 290,
         "time": "Oct 2011"
       },
       {
-        "count": 44,
+        "count": 344,
         "time": "Nov 2011"
       },
       {
-        "count": 30,
+        "count": 350,
         "time": "Dec 2011"
       }
     ],

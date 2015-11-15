@@ -78,7 +78,7 @@ function drawPaths (svg, data, x, y) {
     //console.log("2");
     //console.log(data);
     var format = d3.time.format("%b %Y");
-    colors = ['blue', 'red', 'green', 'yellow', 'violet', 'cyan', 'black']
+    colors = ['blue', 'red', 'green', 'cyan', 'violet', 'cyan', 'black']
     data.forEach(function (d, i) {
         //console.log("4");
         //console.log(d);
@@ -248,7 +248,7 @@ function makeChart (rubins, markers) {
         yAxis = d3.svg.axis().scale(y).orient('left')
             .innerTickSize(-chartWidth).outerTickSize(0).tickPadding(10);
 
-    var svg = d3.select('body').append('svg')
+    var svg = d3.select('#graph').append('svg')
         .attr('width',  svgWidth)
         .attr('height', svgHeight)
         .append('g')
