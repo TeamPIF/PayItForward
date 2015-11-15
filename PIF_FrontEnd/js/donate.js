@@ -6,8 +6,8 @@ $.when(
     $.get(domain + "/homepage/available_all"),
     $.get(domain + "/homepage/num_partners")
 ).done(function(donated, served, avail, partners){
-    $("#mealsDonated").html(Number(donated));
-    $("#mealsServed").html(Number(served));
-    $("#localPartners").html(Number(avail));
-    $("#sinceLaunch").html(Number(partners));
+    $("#mealsDonated").html(Number(JSON.parse(donated[0]).sum));
+    $("#mealsServed").html(Number(JSON.parse(served[0]).sum));
+    $("#localPartners").html(Number(JSON.parse(avail[0]).sum));
+    $("#sinceLaunch").html(Number(JSON.parse(partners[0]).sum));
 });
