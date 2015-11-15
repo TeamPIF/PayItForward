@@ -9,7 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 80%; }
+    </style>
     <title>PayItForward</title>
 
     <!-- Bootstrap Core CSS -->
@@ -255,12 +258,50 @@
 
     </div>
     <!-- /.content-section-a -->
+    <div id="map"></div>
+        <script type="text/javascript">
 
-    <div class = row>
-        <!--Google Maps-->
+            var map;
+            function initMap() {
+              map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 42.439587, lng: -76.497449},
+                zoom: 15,
+                scrollwheel: false
+              });
 
-    </div>
 
+            var myLatLng1 = {lat: 42.443961, lng: -76.501881};
+            var myLatLng2 = {lat: 42.443961, lng: -76.501881};
+            var myLatLng3 = {lat: 42.43876, lng: -76.499168};
+            var myLatLng4 = {lat: 42.440606, lng: -76.49567};
+
+            var marker = new google.maps.Marker({
+                position: myLatLng1,
+                map: map,
+                title: 'Hello World!'
+              });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng2,
+                map: map,
+                title: 'Hello World!'
+              });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng3,
+                map: map,
+                title: 'Hello World!'
+              });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng4,
+                map: map,
+                title: 'Hello World!'
+              });
+
+            }
+
+            </script>
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -298,7 +339,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd61yQ2dvQ44BqtB9OnjhLThj3Vh6hQyw&callback=initMap">
+    </script>
 </body>
 
 </html>
