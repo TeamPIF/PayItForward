@@ -20,8 +20,8 @@ public class Update extends Query {
 
     public static void donation(String business_id, String donor_id) {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection(jdbcUrl);
+            Class.forName(DRIVER_NAME);
+            Connection conn = DriverManager.getConnection(JBCCURL);
 
             PreparedStatement preparedStmt = conn.prepareStatement(INSERT_DONATION);
             preparedStmt.setString(1, business_id);
@@ -35,8 +35,8 @@ public class Update extends Query {
 
     public static void claim(String business_id) {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection(jdbcUrl);
+            Class.forName(DRIVER_NAME);
+            Connection conn = DriverManager.getConnection(JBCCURL);
 
             PreparedStatement preparedStmt = conn.prepareStatement(INSERT_CLAIM);
             preparedStmt.setString(1, business_id);
@@ -49,9 +49,9 @@ public class Update extends Query {
 
     public static void credentials(String bid, String email, String password){
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName(DRIVER_NAME);
 
-            Connection conn = DriverManager.getConnection(jdbcUrl);
+            Connection conn = DriverManager.getConnection(JBCCURL);
 
             PreparedStatement preparedStmt = conn.prepareStatement(INSERT_CREDENTIALS);
             preparedStmt.setString(1, bid);
@@ -65,9 +65,9 @@ public class Update extends Query {
 
     public static void business(String name, String address, String email, String password) {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName(DRIVER_NAME);
 
-            Connection conn = DriverManager.getConnection(jdbcUrl);
+            Connection conn = DriverManager.getConnection(JBCCURL);
 
             PreparedStatement preparedStmt = conn.prepareStatement(INSERT_BUSINESS);
             preparedStmt.setString(1, name);
@@ -83,9 +83,9 @@ public class Update extends Query {
 
     public static void thank_you(String name, String message) {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName(DRIVER_NAME);
 
-            Connection conn = DriverManager.getConnection(jdbcUrl);
+            Connection conn = DriverManager.getConnection(JBCCURL);
 
             PreparedStatement preparedStmt = conn.prepareStatement(INSERT_THANK_YOU);
             preparedStmt.setString(1, name);
