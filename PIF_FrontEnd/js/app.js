@@ -2,17 +2,6 @@ function addAxesAndLegend (svg, xAxis, yAxis, margin, chartWidth, chartHeight) {
     var legendWidth  = 200,
         legendHeight = 100;
 
-// clipping to make sure nothing appears behind legend
-//    svg.append('clipPath')
-//        .attr('id', 'axes-clip')
-//        .append('polygon')
-//        .attr('points', (-margin.left)                 + ',' + (-margin.top)                 + ' ' +
-//            (chartWidth - legendWidth - 1) + ',' + (-margin.top)                 + ' ' +
-//            (chartWidth - legendWidth - 1) + ',' + legendHeight                  + ' ' +
-//            (chartWidth + margin.right)    + ',' + legendHeight                  + ' ' +
-//            (chartWidth + margin.right)    + ',' + (chartHeight + margin.bottom) + ' ' +
-//            (-margin.left)                 + ',' + (chartHeight + margin.bottom));
-
     var axes = svg.append('g')
         .attr('clip-path', 'url(#axes-clip)');
 
@@ -30,48 +19,6 @@ function addAxesAndLegend (svg, xAxis, yAxis, margin, chartWidth, chartHeight) {
         .attr('dy', '.71em')
         .style('text-anchor', 'end')
         .text('Number of Donations');
-
-    //var legend = svg.append('g')
-    //    .attr('class', 'legend')
-    //    .attr('transform', 'translate(' + (chartWidth - legendWidth) + ', 0)');
-    //
-    //legend.append('rect')
-    //    .attr('class', 'legend-bg')
-    //    .attr('width',  legendWidth)
-    //    .attr('height', legendHeight);
-    //
-    //legend.append('rect')
-    //    .attr('class', 'outer')
-    //    .attr('width',  75)
-    //    .attr('height', 20)
-    //    .attr('x', 10)
-    //    .attr('y', 10);
-    //
-    //legend.append('text')
-    //    .attr('x', 115)
-    //    .attr('y', 25)
-    //    .text('5% - 95%');
-    //
-    //legend.append('rect')
-    //    .attr('class', 'inner')
-    //    .attr('width',  75)
-    //    .attr('height', 20)
-    //    .attr('x', 10)
-    //    .attr('y', 40);
-    //
-    //legend.append('text')
-    //    .attr('x', 115)
-    //    .attr('y', 55)
-    //    .text('25% - 75%');
-    //
-    //legend.append('path')
-    //    .attr('class', 'median-line')
-    //    .attr('d', 'M10,80L85,80');
-    //
-    //legend.append('text')
-    //    .attr('x', 115)
-    //    .attr('y', 85)
-    //    .text('Median');
 }
 
 function drawPaths (svg, data, x, y) {
@@ -105,66 +52,7 @@ function drawPaths (svg, data, x, y) {
 
 
     });
-    //var upperOuterArea = d3.svg.area()
-    //    .interpolate('basis')
-    //    .x (function (d) {
-    //        //console.log(d);
-    //        return x(d.date) || 1; })
-    //    .y0(function (d) { return y(d.pct95); })
-    //    .y1(function (d) { return y(d.pct75); });
 
-    //var upperInnerArea = d3.svg.area()
-    //    .interpolate('basis')
-    //    .x (function (d) { return x(d.date) || 1; })
-    //    .y0(function (d) { return y(d.pct75); })
-    //    .y1(function (d) { return y(d.pct50); });
-
-    //var medianLine = d3.svg.line()
-    //    .interpolate('basis')
-    //    .x(function (d) {
-    //        console.log("3");
-    //        console.log(d);
-    //        return x(d.date); })
-    //    .y(function (d) { return y(d.pct50); });
-
-    //var lowerInnerArea = d3.svg.area()
-    //    .interpolate('basis')
-    //    .x (function (d) { return x(d.date) || 1; })
-    //    .y0(function (d) { return y(d.pct50); })
-    //    .y1(function (d) { return y(d.pct25); });
-    //
-    //var lowerOuterArea = d3.svg.area()
-    //    .interpolate('basis')
-    //    .x (function (d) { return x(d.date) || 1; })
-    //    .y0(function (d) { return y(d.pct25); })
-    //    .y1(function (d) { return y(d.pct05); });
-    //
-    //svg.datum(data);
-
-    //svg.append('path')
-    //    .attr('class', 'area upper outer')
-    //    .attr('d', upperOuterArea)
-    //    .attr('clip-path', 'url(#rect-clip)');
-
-    //svg.append('path')
-    //    .attr('class', 'area lower outer')
-    //    .attr('d', lowerOuterArea)
-    //    .attr('clip-path', 'url(#rect-clip)');
-
-    //svg.append('path')
-    //    .attr('class', 'area upper inner')
-    //    .attr('d', upperInnerArea)
-    //    .attr('clip-path', 'url(#rect-clip)');
-
-    //svg.append('path')
-    //    .attr('class', 'area lower inner')
-    //    .attr('d', lowerInnerArea)
-    //    .attr('clip-path', 'url(#rect-clip)');
-
-    //svg.append('path')
-    //    .attr('class', 'median-line')
-    //    .attr('d', medianLine)
-    //    .attr('clip-path', 'url(#rect-clip)');
 }
 
 function addMarker (marker, svg, chartHeight, x) {
@@ -252,7 +140,9 @@ function makeChart (rubins, markers) {
         .attr('width',  svgWidth)
         .attr('height', svgHeight)
         .append('g')
-        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+        .style("display", "block")
+        .style("margin", "auto");
 
 // clipping to start chart hidden and slide it in later
     var rectClip = svg.append('clipPath')
@@ -266,7 +156,19 @@ function makeChart (rubins, markers) {
     startTransitions(svg, chartWidth, chartHeight, rectClip, markers, x);
 }
 
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
+}
+
 var parseDate  = d3.time.format('%Y-%m-%d').parse;
+var inView = false;
 d3.json('data.json', function (error, rawData) {
     if (error) {
         console.error(error);
@@ -316,6 +218,12 @@ d3.json('data.json', function (error, rawData) {
                 data: companyInfo['donations']
             };
         });
-        makeChart(rubins, things);
+        $(window).scroll(function() {
+            if (isScrolledIntoView('#graph')) {
+                if (inView) { return; }
+                inView = true;
+                makeChart(rubins, things);
+            }
+        });
     });
 });
