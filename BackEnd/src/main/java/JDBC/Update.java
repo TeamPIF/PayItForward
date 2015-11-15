@@ -7,10 +7,10 @@ import java.sql.*;
  * Created by EvanKing on 11/14/15.
  */
 public class Update extends Query {
-    final static String INSERT_DONATION = "insert into Donation (id, business_id, donor_id, donation_time)" +
-            "values (?, ?, ?, ?);";
-    final static String INSERT_CLAIM = "insert into Claim (id, business_id, claim_time)" +
-            "values (?, ?, ?, ?);";
+    final static String INSERT_DONATION = "insert into Donation (id, business_id, donor_id)" +
+            "values (?, ?, ?);";
+    final static String INSERT_CLAIM = "insert into Claim (id, business_id)" +
+            "values (?, ?);";
     final static String INSERT_BUSINESS = "insert into Business (id, name, address)" +
             "values (?, ?, ?);";
     final static String INSERT_CREDENTIALS = "insert into Credentials (business_id, email, password)" +
@@ -26,7 +26,6 @@ public class Update extends Query {
             preparedStmt.setString(1, business_id);
             preparedStmt.setString(2, id);
             preparedStmt.setString(3, donor_id);
-            preparedStmt.setTimestamp(4, new java.sql.Timestamp(new java.util.Date().getTime()));
             preparedStmt.executeQuery();
 
         } catch (Exception e) {
@@ -42,7 +41,6 @@ public class Update extends Query {
             PreparedStatement preparedStmt = conn.prepareStatement(INSERT_CLAIM);
             preparedStmt.setString(1, id);
             preparedStmt.setString(2, business_id);
-            preparedStmt.setTimestamp(3, new java.sql.Timestamp(new java.util.Date().getTime()));
             preparedStmt.executeQuery();
 
         } catch (Exception e) {

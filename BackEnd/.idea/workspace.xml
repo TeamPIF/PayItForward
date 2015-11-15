@@ -51,11 +51,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Data/Homepage/Served.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-              <folding>
-                <element signature="e#136#137#0" expanded="true" />
-                <element signature="e#166#167#0" expanded="true" />
-              </folding>
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,19 +61,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Data/Homepage/Donation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-              <folding>
-                <element signature="e#138#139#0" expanded="true" />
-                <element signature="e#168#169#0" expanded="true" />
-              </folding>
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MealsAtEachBusiness.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MealsAtEachBusiness.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Data/Homepage/Partners/MealsAtEachBusiness.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1758794">
+            <state vertical-scroll-proportion="0.0">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
@@ -89,22 +83,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Partners.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Pages/Partners.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#232#233#0" expanded="true" />
-                <element signature="e#267#268#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#384#385#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -123,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/Receive.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="111" column="44" selection-start-line="111" selection-start-column="44" selection-end-line="111" selection-end-column="44" />
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1447568274000" expanded="true" signature="312:351" placeholder="select COUNT..Donations..." />
@@ -142,13 +120,26 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/Update.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="81" selection-end-column="40" />
+              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
               <folding>
-                <marker date="1447565722000" expanded="true" signature="159:258" placeholder="insert into ..." />
-                <marker date="1447565722000" expanded="true" signature="302:385" placeholder="insert into ..." />
-                <marker date="1447565722000" expanded="true" signature="432:505" placeholder="insert into ..." />
-                <marker date="1447565722000" expanded="true" signature="555:642" placeholder="insert into ..." />
-                <marker date="1447565722000" expanded="true" signature="690:764" placeholder="insert into ..." />
+                <marker date="1447569499000" expanded="true" signature="159:240" placeholder="insert into ..." />
+                <marker date="1447569499000" expanded="true" signature="284:349" placeholder="insert into ..." />
+                <marker date="1447569499000" expanded="true" signature="396:469" placeholder="insert into ..." />
+                <marker date="1447569499000" expanded="true" signature="519:606" placeholder="insert into ..." />
+                <marker date="1447569499000" expanded="true" signature="654:728" placeholder="insert into ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sum.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Data/Homepage/Sum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.32663316">
+              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+              <folding>
+                <element signature="e#133#134#0" expanded="true" />
+                <element signature="e#163#164#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -185,16 +176,17 @@
         <option value="$PROJECT_DIR$/src/main/java/JDBC/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/Homepage.java" />
         <option value="$PROJECT_DIR$/src/main/java/HelperObject/CountTime.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JDBC/Update.java" />
         <option value="$PROJECT_DIR$/src/main/java/HelperObject/Business.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/Partners.java" />
         <option value="$PROJECT_DIR$/src/main/java/JDBC/Receive.java" />
         <option value="$PROJECT_DIR$/src/main/java/Data/Homepage/donation.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Data/Homepage/Donation.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/Homepage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Data/Homepage/Served.java" />
         <option value="$PROJECT_DIR$/src/main/java/Data/Homepage/Partners/MealsAtEachBusiness.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JDBC/Update.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Data/Homepage/Sum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Data/Homepage/Served.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Data/Homepage/Donation.java" />
       </list>
     </option>
   </component>
@@ -800,12 +792,12 @@
       <updated>1447529704718</updated>
       <workItem from="1447529706048" duration="478000" />
       <workItem from="1447546779375" duration="1273000" />
-      <workItem from="1447550093861" duration="15514000" />
+      <workItem from="1447550093861" duration="16340000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17265000" />
+    <option name="totallyTimeSpent" value="18091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="0" />
@@ -979,14 +971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Pages/Partners.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -997,37 +981,6 @@
             <element signature="e#267#268#0" expanded="true" />
             <element signature="e#336#337#0" expanded="true" />
             <element signature="e#384#385#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/Update.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="81" selection-end-column="40" />
-          <folding>
-            <marker date="1447565722000" expanded="true" signature="159:258" placeholder="insert into ..." />
-            <marker date="1447565722000" expanded="true" signature="302:385" placeholder="insert into ..." />
-            <marker date="1447565722000" expanded="true" signature="432:505" placeholder="insert into ..." />
-            <marker date="1447565722000" expanded="true" signature="555:642" placeholder="insert into ..." />
-            <marker date="1447565722000" expanded="true" signature="690:764" placeholder="insert into ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/Receive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="111" column="44" selection-start-line="111" selection-start-column="44" selection-end-line="111" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1447568274000" expanded="true" signature="312:351" placeholder="select COUNT..Donations..." />
-            <marker date="1447568274000" expanded="true" signature="400:433" placeholder="select COUNT..Claims..." />
-            <marker date="1447568274000" expanded="true" signature="481:526" placeholder="select passw..Business..." />
-            <marker date="1447568274000" expanded="true" signature="567:672" placeholder="select month..." />
-            <marker date="1447568274000" expanded="true" signature="567:736" placeholder="select month..." />
-            <marker date="1447568274000" expanded="true" signature="567:760" placeholder="select month..." />
-            <marker date="1447568274000" expanded="true" signature="801:824" placeholder="select busin..Business..." />
           </folding>
         </state>
       </provider>
@@ -1050,17 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Data/Homepage/Donation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <element signature="e#138#139#0" expanded="true" />
-            <element signature="e#168#169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Controller/Homepage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1071,22 +1013,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Data/Homepage/Served.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Data/Homepage/Partners/MealsAtEachBusiness.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/Receive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
           <folding>
-            <element signature="e#136#137#0" expanded="true" />
-            <element signature="e#166#167#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1447568274000" expanded="true" signature="312:351" placeholder="select COUNT..Donations..." />
+            <marker date="1447568274000" expanded="true" signature="400:433" placeholder="select COUNT..Claims..." />
+            <marker date="1447568274000" expanded="true" signature="481:526" placeholder="select passw..Business..." />
+            <marker date="1447568274000" expanded="true" signature="567:672" placeholder="select month..." />
+            <marker date="1447568274000" expanded="true" signature="567:736" placeholder="select month..." />
+            <marker date="1447568274000" expanded="true" signature="567:760" placeholder="select month..." />
+            <marker date="1447568274000" expanded="true" signature="801:824" placeholder="select busin..Business..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Data/Homepage/Partners/MealsAtEachBusiness.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/Update.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1758794">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+          <folding>
+            <marker date="1447569499000" expanded="true" signature="159:240" placeholder="insert into ..." />
+            <marker date="1447569499000" expanded="true" signature="284:349" placeholder="insert into ..." />
+            <marker date="1447569499000" expanded="true" signature="396:469" placeholder="insert into ..." />
+            <marker date="1447569499000" expanded="true" signature="519:606" placeholder="insert into ..." />
+            <marker date="1447569499000" expanded="true" signature="654:728" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Data/Homepage/Served.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Data/Homepage/Donation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Data/Homepage/Sum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32663316">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding>
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
