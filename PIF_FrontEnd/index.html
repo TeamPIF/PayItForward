@@ -28,6 +28,12 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="http://d3js.org/d3.v3.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <!-- Donation Statistics Loading Script -->
+    <script src="js/donate.js"></script>
+    <script src="js/app.js"></script>
 
 </head>
 
@@ -157,7 +163,7 @@
         <div class="container">
 
             <div class="row" id = "progress">
-                <div class="col-lg-12 col-sm-12">
+                <div class="col-lg-12 col-sm-12" style="text-align:center;">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">OUR PROGRESS</h2>
                     <!--<p class="lead">
@@ -172,19 +178,18 @@
                         <h3>MEALS SERVED</h3>
                     </div>
                     <div class = "col-lg-2 col-sm-2 col-lg-offset-1">
-                        <h1 id="localPartners"></h1>
+                        <h1 id="localPartners">10</h1>
                         <h3>LOCAL PARTNERS</h3>
                     </div>
                     <div class = "col-lg-2 col-sm-2 col-lg-offset-1">
-                        <h1 id="sinceLaunch"></h1>
-                        <h3>DAYS SINCE LAUNCH</h3>
+                        <h1 id="available"></h1>
+                        <h3>TOTAL AVAILABLE DONATIONS</h3>
                     </div>
                 </div>
 
             </div>
-            <div class = "row" id = "graph">
+            <div class = "row" id = "graph" style="text-align:center;">
                 <!-- GRAPH -->
-                <script src="app.js"></script>
             </div>
 
         </div>
@@ -315,15 +320,8 @@
             </div>
         </div>
     </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Donation Statistics Loading Script -->
-    <script src="js/donate.js"></script>
 
 </body>
 
