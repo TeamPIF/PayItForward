@@ -84,7 +84,7 @@ h6 {
 }
 h1 {
     font-size: 70px;
-    color: #4864a6;
+    color: rgb(63, 132, 197);
     font-family: "Montserrat";
 }
 
@@ -102,7 +102,7 @@ h1 {
     margin-top: 50px;
     border-style: solid;
     border-width: 15px;
-    border-color: #d9d9d9;
+    border-color: rgb(63, 132, 197);
 
 }
 
