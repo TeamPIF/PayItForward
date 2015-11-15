@@ -12,7 +12,6 @@
     font-size: 80%;
     color: #508fc7;
     font-weight: bold;
-    padding: 3px 8px;
     border-radius: 3px;
     font-size: 100px;
 }
@@ -49,7 +48,25 @@
     text-decoration: underline;
 }
 
+.custom-counter {
+    margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+}
 
+.custom-counter li::before {
+    content: counter(step-counter);
+    margin-right: 5px;
+    font-size: 80%;
+    color: #63a7c7;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 30px;
+}
+.custom-counter li {
+    counter-increment: step-counter;
+}
 
 
 
