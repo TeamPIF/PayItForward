@@ -19,7 +19,7 @@ public class Receive extends Query {
     final static String COUNT_TIME = "select D.business_id as bid, month(D.donation_time) as Month, Count(D.business_id) as Sum from Donation D where D.business_id = ? " +
             "group by D.business_id, Month(D.donation_time)";
     final static String BUSINESSES = "select id from Business";
-    final static String BID = "select id from Business where email = ?";
+    final static String BID = "select id from Business where name = ?";
     final static String NUM_PARTNERS = "select Count(*) from Business";
 
     public static int totalMealsDonated() {
@@ -122,14 +122,14 @@ public class Receive extends Query {
         return partners;
     }
 
-    public static int bid(String email) {
+    public static int bid(String b_name) {
         int bid = 0;
         try {
             Class.forName(DRIVER_NAME);
             Connection conn = DriverManager.getConnection(JBCCURL);
 
             PreparedStatement preparedStmt = conn.prepareStatement(BID);
-            preparedStmt.setString(1, email);
+            preparedStmt.setString(1, b_name);
             ResultSet rs = preparedStmt.executeQuery();
             if (rs.next()) bid = rs.getInt(1);
         } catch (Exception e) {

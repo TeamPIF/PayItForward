@@ -54,10 +54,10 @@ h6 {
 }
 
 #give_receive {
-    margin-top: 60px;
+    margin-top: 10px;
 }
 #give_button a{
-    font-size: 40px;
+    font-size: 20px;
     border-style: solid;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -70,10 +70,13 @@ h6 {
 }
 
 #receive_button a {
-    font-size: 40px;
+    font-size: 20px;
     border-style: solid;
     border-width: 10px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-decoration: none;
     text-space: 4px;
     margin-left: 60px;
@@ -86,7 +89,7 @@ h1 {
 }
 
 #confirm h1{
-    margin-top: 170px;
+    margin-top: 80px;
     text-align: center;
     font-family: "Montserrat Light";
     font-size: 60px;
@@ -96,7 +99,7 @@ h1 {
 #buttons {
     background-color: #f5f4f7;
     height: 350px;
-    margin-top: 100px;
+    margin-top: 50px;
     border-style: solid;
     border-width: 15px;
     border-color: #d9d9d9;
@@ -104,10 +107,18 @@ h1 {
 }
 
 #buttons a {
-    font-size: 40px;
+    font-size: 30px;
     padding: 10px;
     margin-top: 200px;
     text-decoration: none;
     text-space: 4px;
     margin-left: 60px;
+}
+
+footer {
+    padding-top: 50px;
+    /*padding: 50px 0;*/
+    background-color: "gray";
+    left:0;
+    font-size: 100;
 }
