@@ -1,9 +1,9 @@
 package Controller;
 
-import Data.Homepage.Available;
-import Data.Homepage.Donation;
+import Data.Homepage.Homepage.Available;
+import Data.Homepage.Homepage.Donation;
 import Data.Homepage.Partners.NumPartners;
-import Data.Homepage.Served;
+import Data.Homepage.Homepage.Served;
 import JDBC.Receive;
 import com.google.gson.Gson;
 
