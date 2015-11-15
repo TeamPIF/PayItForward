@@ -1,9 +1,8 @@
 package Controller;
 
-import Data.Homepage.Donation.Donation;
+import Data.Homepage.Donate.Donation;
 import Data.Homepage.Tablet.Claim;
 import JDBC.Update;
-import com.google.gson.Gson;
 
 import static spark.Spark.*;
 

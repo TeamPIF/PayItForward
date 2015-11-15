@@ -45,7 +45,7 @@ public class Donation {
 
     @Override
     public String toString() {
-        return "Donation{" +
+        return "Donate{" +
                 "bid=" + bid +
                 ", claim_time=" + claim_time +
                 ", name='" + name + '\'' +

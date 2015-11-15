@@ -26,7 +26,7 @@ public class Update extends Query {
             PreparedStatement preparedStmt = conn.prepareStatement(INSERT_DONATION);
             preparedStmt.setString(1, business_id);
             preparedStmt.setString(2, donor_id);
-            preparedStmt.executeQuery();
+            preparedStmt.executeUpdate();
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -40,7 +40,7 @@ public class Update extends Query {
 
             PreparedStatement preparedStmt = conn.prepareStatement(INSERT_CLAIM);
             preparedStmt.setString(1, business_id);
-            preparedStmt.executeQuery();
+            preparedStmt.executeUpdate();
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -57,7 +57,7 @@ public class Update extends Query {
             preparedStmt.setString(1, bid);
             preparedStmt.setString(2, email);
             preparedStmt.setString(3, password);
-            preparedStmt.executeQuery();
+            preparedStmt.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -65,16 +65,29 @@ public class Update extends Query {
 
     public static void business(String name, String address, String email, String password) {
         try {
+            long bid;
             Class.forName(DRIVER_NAME);
 
             Connection conn = DriverManager.getConnection(JBCCURL);
 
-            PreparedStatement preparedStmt = conn.prepareStatement(INSERT_BUSINESS);
+            PreparedStatement preparedStmt = conn.prepareStatement(INSERT_BUSINESS, Statement.RETURN_GENERATED_KEYS);
             preparedStmt.setString(1, name);
             preparedStmt.setString(2, address);
-            preparedStmt.executeQuery();
+            int affectedRows = preparedStmt.executeUpdate();
+            if (affectedRows == 0) {
+                throw new SQLException("Creating user failed, no rows affected.");
+            }
 
-            credentials(Integer.toString(Receive.bid(email)), email, password);
+            try (ResultSet generatedKeys = preparedStmt.getGeneratedKeys()) {
+                if (generatedKeys.next()) {
+                    bid = generatedKeys.getLong(1);
+                }
+                else {
+                    throw new SQLException("Creating user failed, no ID obtained.");
+                }
+            }
+
+            credentials(Long.toString(bid), email, password);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -90,7 +103,7 @@ public class Update extends Query {
             PreparedStatement preparedStmt = conn.prepareStatement(INSERT_THANK_YOU);
             preparedStmt.setString(1, name);
             preparedStmt.setString(2, message);
-            preparedStmt.executeQuery();
+            preparedStmt.executeUpdate();
 
         } catch (Exception e) {
             e.printStackTrace();

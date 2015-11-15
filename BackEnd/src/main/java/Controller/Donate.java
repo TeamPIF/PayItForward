@@ -1,6 +1,6 @@
 package Controller;
 
-import Data.Homepage.Donation.Donation;
+import Data.Homepage.Donate.Donation;
 import JDBC.Update;
 import com.google.gson.Gson;
 

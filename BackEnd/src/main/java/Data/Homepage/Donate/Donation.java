@@ -1,4 +1,4 @@
-package Data.Homepage.Donation;
+package Data.Homepage.Donate;
 
 /**
  * Created by EvanKing on 11/15/15.
@@ -17,7 +17,7 @@ public class Donation {
 
     @Override
     public String toString() {
-        return "Donation{" +
+        return "Donate{" +
                 "business_id='" + business_id + '\'' +
                 ", donor_id='" + donor_id + '\'' +
                 '}';

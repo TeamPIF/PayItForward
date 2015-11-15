@@ -1,8 +1,8 @@
 /**
  * Created by EvanKing on 11/14/15.
  */
-import Controller.Homepage;
-import Controller.Partners;
+import Controller.*;
+import JDBC.Update;
 
 import static spark.Spark.before;
 
@@ -17,7 +17,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        enableCORS("*","*","*");
+        enableCORS("*", "*", "*");
+
+        Donate donate = new Donate();
+        donate.postDonation();
+
         Homepage homepage = new Homepage();
         homepage.getDonated();
         homepage.getServed();
@@ -26,5 +30,14 @@ public class Main {
 
         Partners partners = new Partners();
         partners.getDonatedByBusiness();
+
+        Register register = new Register();
+        register.postBusiness();
+
+        Stories stories = new Stories();
+        stories.postBusiness();
+
+        Tablet tablet = new Tablet();
+        tablet.postDonation();
     }
 }
