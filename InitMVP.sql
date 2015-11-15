@@ -48,27 +48,34 @@ CREATE TABLE Credentials (
     FOREIGN KEY (business_id) REFERENCES Business(id)
 );
 
-INSERT INTO Thank_You (id, name, message) VALUES 
-	(1, "Skrilly Daniels", "Toby Keith I Love this Bar and Grill"),
-    (2, "Noah Rubin", "You suck"),
-    (3, "Jackson Smith", "You're great"),
-    (4, "Baird Howland", "We're gonna win RoHK"),
-    (5, "Ishaan Javheri", "We're gonna make those homeless people happier than anyone else in this building could, Bonobos style.");
+INSERT INTO Thank_You (name, message) VALUES 
+	("Skrilly Daniels", "Toby Keith I Love this Bar and Grill"),
+    ("Noah Rubin", "You suck"),
+    ("Jackson Smith", "You're great"),
+    ("Baird Howland", "We're gonna win RoHK"),
+    ("Ishaan Javheri", "We're gonna make those homeless people happier than anyone else in this building could, Bonobos style.");
 
-INSERT INTO Business (id, name, address) VALUES 
-	(1, "Dick's Barn Yard", "115 Suck Me Avenue Ithaca, NY 14850"),
-    (2, "Model's", "26 Ridge Road Ithaca, NY 14850"),
-    (3, "La Croix", "3 Tuxedo Drive Ithaca, NY 14850");
+INSERT INTO Business (name, address) VALUES 
+	("Dick's Barn Yard", "115 Suck Me Avenue Ithaca, NY 14850"),
+    ("Model's", "26 Ridge Road Ithaca, NY 14850"),
+    ("La Croix", "3 Tuxedo Drive Ithaca, NY 14850");
 
-INSERT INTO Donation (id, business_id, doner_id) VALUES 
-	(1, 1, NULL),
-    (2, 1, NULL),
-    (3, 2, NULL),
-    (4, 2, NULL),
-    (5, 3, NULL);
+INSERT INTO Donation (business_id, doner_id) VALUES 
+	(1, NULL),
+    (1, NULL),
+    (2, NULL),
+    (2, NULL),
+    (3, NULL);
 
-DROP TABLE IF EXISTS Thank_You;
-DROP TABLE IF EXISTS Claim;
-DROP TABLE IF EXISTS Business;
-DROP TABLE IF EXISTS Donation;
-DROP TABLE IF EXISTS Credentials;
+INSERT INTO Claim (business_id) VALUES
+	(1),
+    (2),
+    (3);
+
+-- DROP TABLE IF EXISTS Thank_You;
+-- DROP TABLE IF EXISTS Claim;
+-- DROP TABLE IF EXISTS Business;
+-- DROP TABLE IF EXISTS Donation;
+-- DROP TABLE IF EXISTS Credentials;
+
+SELECT * FROM Claim;
