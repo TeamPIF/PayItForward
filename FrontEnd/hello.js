@@ -1,11 +1,3 @@
-
-
-
-
-<<<<<<< HEAD
-
-
-=======
 var carName = "Margo";
 document.getElementById("demo").innerHTML = carName;
 
@@ -19,7 +11,6 @@ document.getElementById("demo").innerHTML = carName;
 //        console.log(response.body);
 //       // document.getElementById("demo").innerHTML = carName;
 //    });
->>>>>>> 15bcdf07b90a16ea1f7151886a96cbbaa4817d59
 
 // var unirest = require('unirest');
 //
