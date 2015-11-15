@@ -1,15 +1,15 @@
-/**
- * Created by EvanKing on 11/14/15.
- */
-import com.google.gson.Gson;
-import sectors.Donation;
+package Controller;
+
 import spark.Filter;
 import spark.Request;
 import spark.Response;
 
-import static spark.Spark.*;
+import static spark.Spark.before;
 
-public class HelloWorld {
+/**
+ * Created by EvanKing on 11/14/15.
+ */
+public class Controller {
 
     private static void enableCORS(final String origin, final String methods, final String headers) {
         before(new Filter() {
@@ -22,16 +22,7 @@ public class HelloWorld {
         });
     }
 
-    public static void main(String[] args) {
-//        enableCORS("*", "*", "*");
-//        get("/hello", (req, res) -> "Hello World Confirm");
+    public static void getHomepage(){
 
-        Donation d = new Donation(12, new java.sql.Timestamp(new java.util.Date().getTime()), "test");
-
-        Gson gson = new Gson();
-
-        String json = gson.toJson(d);
-
-        System.out.println(json);
     }
 }
