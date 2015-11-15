@@ -15,7 +15,7 @@ public class Tablet extends Controller{
         post("/tablet/donation", (request, response) -> {
             String req = request.body();
             Donation donation = gson.fromJson(req, Donation.class);
-            int bid = Receive.bid(donation.getEmail());
+            int bid = Receive.bid(donation.getName());
             Update.donation(Integer.toString(bid), null);
             response.status(200);
             return response.body();
@@ -26,7 +26,7 @@ public class Tablet extends Controller{
         post("/tablet/claim", (request, response) -> {
             String req = request.body();
             Claim claim = gson.fromJson(req, Claim.class);
-            int bid = Receive.bid(claim.getEmail());
+            int bid = Receive.bid(claim.getName());
             Update.claim(Integer.toString(bid));
             response.status(200);
             return response.body();
