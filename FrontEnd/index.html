@@ -37,5 +37,11 @@
 
 
 </div>
+<script type="text/javascript">
+    $.when($.get("http://127.0.0.1:4567/hello"))
+     .then(function(data, textStatus, jqXHR) {
+         console.log(data);
+     });
+</script>
 </body>
 </html>
