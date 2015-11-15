@@ -10,8 +10,8 @@ import static spark.Spark.post;
  * Created by EvanKing on 11/15/15.
  */
 public class Stories extends Controller{
-    public void postBusiness() {
-        post("/stories/ThankYou", (request, response) -> {
+    public void postThankYou() {
+        post("/stories/submit", (request, response) -> {
             String req = request.body();
             ThankYou thankYou = gson.fromJson(req, ThankYou.class);
             Update.thank_you(thankYou.getName(), thankYou.getMessage());

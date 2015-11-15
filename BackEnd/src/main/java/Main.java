@@ -35,7 +35,7 @@ public class Main {
         register.postBusiness();
 
         Stories stories = new Stories();
-        stories.postBusiness();
+        stories.postThankYou();
 
         Tablet tablet = new Tablet();
         tablet.postDonation();
