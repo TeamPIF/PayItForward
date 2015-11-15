@@ -11,3 +11,11 @@ $.when(
     $("#localPartners").html(Number(JSON.parse(avail[0]).sum));
     $("#sinceLaunch").html(Number(JSON.parse(partners[0]).sum));
 });
+//
+// $.post("http://localhost:4567/stories/submit",
+//     JSON.stringify(
+//     {
+//         name: "Ishaan",
+//         message: "I love this thing!!"
+//     })
+// );
