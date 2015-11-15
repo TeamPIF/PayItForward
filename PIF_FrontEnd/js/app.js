@@ -228,6 +228,10 @@ d3.json('data.json', function (error, rawData) {
                 if (inView) { return; }
                 inView = true;
                 makeChart(rubins, things);
+                $("#mealsDonated").countTo({from: 0 ,to: donate ,speed: 2500});
+                $("#mealsServed").countTo({from: 0 ,to: serve ,speed: 2500});
+                $("#available").countTo({from: 0 ,to: available ,speed: 2500});
+                $("#localPartners").countTo({from: 0, to: 10, speed: 2500});
             }
         });
     });
