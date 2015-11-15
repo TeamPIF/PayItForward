@@ -21,11 +21,16 @@ function addAxesAndLegend (svg, xAxis, yAxis, margin, chartWidth, chartHeight) {
         .text('Number of Donations');
 }
 
+
+
+
+
+
 function drawPaths (svg, data, x, y) {
     //console.log("2");
     //console.log(data);
     var format = d3.time.format("%b %Y");
-    colors = ['blue', 'red', 'green', 'cyan', 'violet', 'cyan', 'black']
+    colors = ["rgb(0,72,105)", "rgb(14,111,112)", "rgb(0,147,152)", "rgb(56,90,186)", 'violet', 'cyan', 'black']
     data.forEach(function (d, i) {
         //console.log("4");
         //console.log(d);
@@ -47,7 +52,7 @@ function drawPaths (svg, data, x, y) {
             //.attr('class', 'median-line')
             .attr('d', medianLine)
             .attr('fill','none')
-            .attr('stroke-width','3')
+            .attr('stroke-width','6')
             .attr('clip-path', 'url(#rect-clip)');
 
 
