@@ -27,6 +27,15 @@
 
     <!--</script>-->
     <p id="demo"></p>
+
+
+    <?php
+        $entityBody = file_get_contents("http://localhost:4567/hello");
+        $parsed_json = json_decode($entityBody);
+        echo "${parsed_json}";
+    ?>
+
+
 </div>
 </body>
 </html>
