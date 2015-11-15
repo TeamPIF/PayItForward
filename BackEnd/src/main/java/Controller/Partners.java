@@ -12,7 +12,6 @@ import static spark.Spark.post;
  */
 public class Partners extends Controller{
     public void getDonatedByBusiness(){
-        enableCORS("*", "*", "*");
         get("/partners/available/:bid", (request, response) -> {
             String bid = request.params(":bid");
             DonationsAtBusiness donationsAtBusiness = new DonationsAtBusiness();

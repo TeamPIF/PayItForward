@@ -15,7 +15,6 @@ import static spark.Spark.get;
  */
 public class Homepage extends Controller{
     public void getDonated(){
-        enableCORS("*", "*", "*");
         get("/homepage/donated", (request, response) -> {
             Donation donation = new Donation();
             donation.setSum(Receive.totalMealsDonated());
@@ -26,7 +25,6 @@ public class Homepage extends Controller{
     }
 
     public void getServed(){
-        enableCORS("*", "*", "*");
         get("/homepage/served", (request, response) -> {
             Served served = new Served();
             served.setSum(Receive.totalMealsServed());
@@ -37,7 +35,6 @@ public class Homepage extends Controller{
     }
 
     public void getAvailable(){
-        enableCORS("*", "*", "*");
         get("/homepage/available_all", (request, response) -> {
             Available available = new Available();
             available.setSum(Receive.currentlyAvailable());
@@ -48,7 +45,7 @@ public class Homepage extends Controller{
     }
 
     public void getPartners(){
-        enableCORS("*", "*", "*");
+        
         get("/homepage/num_partners", (request, response) -> {
             NumPartners numPartners = new NumPartners();
             numPartners.setSum(Receive.numPartners());
