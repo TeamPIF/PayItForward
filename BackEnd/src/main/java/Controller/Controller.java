@@ -25,4 +25,8 @@ public class Controller {
     public static void getHomepage(){
 
     }
+
+    public static void getPartnersPage(){
+
+    }
 }
