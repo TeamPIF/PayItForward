@@ -11,8 +11,8 @@
 /*photobanner*/
 
 .photobanner {
-    height: 800px;
-    width: 8000px;
+    height: 400px;
+    width: 4000px;
     margin-bottom: 80px;
     margin-top: 80px;
 }
@@ -189,3 +189,28 @@
 }
 
 u { color: blue; }
+
+.story{
+    color: black;
+    font-family: 'Montserrat Light', sans-serif;
+    border-top:1px solid black;
+    font-size:26px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /*make quotes*/
+
+}
+
+.bqstart {
+    float: left;
+    font-size: 700%;
+    color: #0e0bff;
+}
+
+.bqend {
+    float: right;
+    font-size: 700%;
+    color: #2910ff;
+}
