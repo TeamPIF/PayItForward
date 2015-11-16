@@ -94,7 +94,7 @@
                         this organization and one day I want to be the one donating. We're all human and we should care for one another.
                         <br>
                         <br>
-                        <span class="col-lg-20">- Bill</span>
+                        <span class="col-lg-20"> <b> - Bill </b>  </span>
                         <span class="bqend">”</span>  </p>
 
                 </div>
@@ -110,7 +110,7 @@
                         and I even got to leave a comment for the person. When I went home and ate, the tacos tasted better
                         than ever because I knew my donation would feed someone that night. To the person who needed it,
                         I hope you enjoyed it as much as I did!
-                        <span class="col-lg-20">- Gloria</span>
+                        <span class="col-lg-20"> <b> - Gloria </b> </span>
                         <span class="bqend">”</span>
                     </p>
 
@@ -126,7 +126,7 @@
                         this organization and one day I want to be the one donating. We're all human and we should care for one another.
                         <br>
                         <br>
-                        <span class="col-lg-20">- Joyce</span>
+                        <span class="col-lg-20"> <b> - Joyce </b> </span>
                         <span class="bqend">”</span>  </p>
 
                 </div>
@@ -141,7 +141,7 @@
                         this organization and one day I want to be the one donating. We're all human and we should care for one another.
                         <br>
                         <br>
-                        <span class="col-lg-20">- Rupert</span>
+                        <span class="col-lg-20"> <b> - Rupert </b> </span>
                         <span class="bqend">”</span>
                     </p>
 
@@ -197,7 +197,11 @@
                             span3.appendChild(end);
                             var node = document.createTextNode(r.message);
                             var name = document.createTextNode("-"+r.name);
-                            span2.appendChild(name);
+
+                            var element = document.createElement("b");
+                            element.innerHTML = "-"+ r.name;
+
+                            span2.appendChild(element);
                             newMessage.appendChild(span1);
                             newMessage.appendChild(node);
                             newMessage.appendChild(span2);
